@@ -303,22 +303,6 @@ public class BinaryTree : MonoBehaviour
 
     private void PrintTreeByLevel()
     {
-        //Why? This does nothing
-/*        Queue<Node> queue = new Queue<Node>();
-        if (startingNode.leftNode != null)
-            queue.Enqueue(startingNode.leftNode);
-        if (startingNode.rightNode != null)
-            queue.Enqueue(startingNode.rightNode);
-
-        while (queue.Count > 0)
-        {
-            Node node = queue.Dequeue();
-
-            if (node.leftNode != null)
-                queue.Enqueue(node.leftNode);
-            if (node.rightNode != null)
-                queue.Enqueue(node.rightNode);
-        }*/
         PrintTree();
     }
 }
