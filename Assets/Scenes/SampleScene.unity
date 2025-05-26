@@ -201,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319595159}
   - component: {fileID: 319595158}
+  - component: {fileID: 319595160}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -215,7 +216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319595157}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c46d4a2c761613c45b9610e22163d3b3, type: 3}
   m_Name: 
@@ -276,6 +277,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319595160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319595157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46d4a2c761613c45b9610e22163d3b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 11400000, guid: 89547eeb8ba7e6649aee4e2f607ade4f, type: 2}
+  - {fileID: 11400000, guid: cf4fe895aab6cb14895264af03fdc16d, type: 2}
+  - {fileID: 11400000, guid: 7b527ef062b79da41adb43133170dca0, type: 2}
+  - {fileID: 11400000, guid: 68a1d6120a7e48346aa2158f826c0b8b, type: 2}
+  - {fileID: 11400000, guid: eef066b908d01ac4b95deb9070cb439a, type: 2}
+  char1: {fileID: 496038959}
+  char1Name: {fileID: 1032416930}
+  char2: {fileID: 1592089405}
+  char2Name: {fileID: 1157134106}
+  nums: 
 --- !u!1 &494438693
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +680,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 319595158}
+        m_TargetAssemblyTypeName: BinaryTree, Assembly-CSharp
+        m_MethodName: LeftButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 319595160}
         m_TargetAssemblyTypeName: BinaryTree, Assembly-CSharp
         m_MethodName: LeftButtonClicked
         m_Mode: 1
@@ -1176,6 +1212,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 319595160}
+        m_TargetAssemblyTypeName: BinaryTree, Assembly-CSharp
+        m_MethodName: RightButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1237446690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,6 +1423,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 319595158}
+        m_TargetAssemblyTypeName: BinaryTree, Assembly-CSharp
+        m_MethodName: MiddleButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 319595160}
         m_TargetAssemblyTypeName: BinaryTree, Assembly-CSharp
         m_MethodName: MiddleButtonClicked
         m_Mode: 1

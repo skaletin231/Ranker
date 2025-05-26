@@ -98,7 +98,6 @@ public class BinaryTree : MonoBehaviour
     {
         while (characters.Count > 0)
         {
-
             int randomInt = Random.Range(0, characters.Count);
             Characters holder = characters[randomInt];
             characters.RemoveAt(randomInt);
@@ -196,17 +195,17 @@ public class BinaryTree : MonoBehaviour
             
             if (Mathf.Abs(currentNode.Balance()) > 1)
             {
-                if (currentNode.Balance() > 1)
+                if (currentNode.Balance() > 1) //More nodes on right
                 {
-                    if (currentNode.rightNode.Balance() < 0)
-                        RotateRight(currentNode.rightNode);
+                    /*if (currentNode.rightNode.Balance() < 0)
+                        RotateRight(currentNode.rightNode);*/
                     RotateLeft(currentNode);
                     
                 }
-                else
+                else //more nodes on left
                 {
-                    if (currentNode.leftNode.Balance() > 0)
-                        RotateLeft(currentNode.leftNode);
+                    /*if (currentNode.leftNode.Balance() > 0)
+                        RotateLeft(currentNode.leftNode);*/
                     RotateRight(currentNode);
                 }
                 currentNode = null;
@@ -296,7 +295,6 @@ public class BinaryTree : MonoBehaviour
     {
         if (node == null)
             return;
-        Debug.Log(node.randomNumForTeasting);
         PrintTree(node.leftNode);
         toPrint += ", " + node.characters[0].Name;
         //toPrint += ", " + node.randomNumForTeasting;
@@ -305,31 +303,22 @@ public class BinaryTree : MonoBehaviour
 
     private void PrintTreeByLevel()
     {
-        Queue<Node> queue = new Queue<Node>();
+        //Why? This does nothing
+/*        Queue<Node> queue = new Queue<Node>();
         if (startingNode.leftNode != null)
             queue.Enqueue(startingNode.leftNode);
         if (startingNode.rightNode != null)
             queue.Enqueue(startingNode.rightNode);
-        Debug.Log(startingNode.characters[0].name + " no parent");
 
         while (queue.Count > 0)
         {
             Node node = queue.Dequeue();
-            
-            if (node.parentNode == null)
-            {
-                Debug.Log(node.characters[0].name + " no parent" + " " + node.height);
-            }
-            else
-            {
-                Debug.Log(node.characters[0].name + " " + node.parentNode.characters[0].name + " " + node.height);
-            }
 
             if (node.leftNode != null)
                 queue.Enqueue(node.leftNode);
             if (node.rightNode != null)
                 queue.Enqueue(node.rightNode);
-        }
+        }*/
         PrintTree();
     }
 }
